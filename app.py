@@ -3,7 +3,10 @@ from transformers import pipeline, AutoTokenizer, AutoModelWithLMHead
 
 import openai as openai
 
-openai.api_key = "" #add key
+from chatbot import script
+
+#api key
+# openai.api_key = "" #add key
 #pip install transformers[sentencepiece] <-- might have to install
 
 app = Flask('app_name')
@@ -41,18 +44,18 @@ def get_emotion_type(input):
   emotion_type = dec[0]
   return emotion_type
 
-# @app.route("/")
-# def root():
-#   return render_template("temp.html")
+@app.route("/")
+def root():
+  return render_template("temp.html")
 
 #change tempInput 
 @app.route("/")
 def submit():
-  tempInput = "I had tea today with my friends. I'm so happy."
+  tempInput = script
   isPositive = classifier(tempInput)
   emotion = get_emotion_type(tempInput)
   content_image_url = get_content_img(tempInput)
   style_image_path = emotion_imgs[emotion]
-  # print(style_image_path)
+  print(emotion)
   
 submit()
