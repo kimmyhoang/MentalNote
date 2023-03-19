@@ -1,6 +1,6 @@
 # Mental Note
 
-Mental Note is a sentiment journal that acts as a personal mood tracker. Users write small notes about their day, and recieve a personalized themed image generated based on the overall sentiment of their input. After use of Mental Note for an extended period of time, the user is able to view a colourful mozaic of their mood over time. 
+Mental Note is a sentiment journal that acts as a personal mood tracker. Users write small notes about their day, and receive a personalized themed image generated based on the overall sentiment of their input. After use of Mental Note for an extended period of time, the user is able to view a colourful mozaic of their mood over time. 
 
 Big thanks and credits to HackTheMist workshop leads for giving us the tools to create this project. 
 
