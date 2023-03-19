@@ -1,0 +1,445 @@
+:root {
+    /*this styling will be applied globally*/
+    --dark-purple: #B1B2FF;
+    --dark-blue: #AAC4FF;
+    --light-purple: #D2DAFF;
+    --light-blue: #EEF1FF;
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+  }
+
+  .title{
+    color: var(--dark-purple);
+    text-align: center;
+    padding: 10px;
+  }
+
+.infoPane {
+    width: 1200px;
+    height: 3000px;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    z-index: -5;
+}
+.cloudPane {
+    padding-bottom: 300px;
+    margin: 50;
+    width:100%;
+    position: absolute;
+    height: 100px;
+    z-index: -4;
+}
+
+/*cloud position*/
+ #cloud1 {
+    opacity: .9;
+    top:50px;
+    left: 120%;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    -moz-animation: drift 25s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-delay: 8s;
+    -webkit-animation: drift 25s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 8s;
+    animation: drift 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+    z-index:2;
+}
+#circ1 p {
+    color: #B3DAE6;
+    font-size: 40px;
+    font-family: helvetica;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+#cloud2 {
+    opacity: .8;
+    top:40px;
+    left: 120%;
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    transform: scale(.7);
+    -moz-animation: drift 50s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation: drift 50s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation: drift 50s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+#cloud3 {
+    opacity: 0;
+    top:20px;
+    left: 50%;
+    -webkit-transform: scale(.35);
+    -moz-transform: scale(.35);
+    transform: scale(.35);
+    -moz-animation: driftBg 70s;
+    -moz-animation-timing-function: linear;
+    -webkit-animation: driftBg 70s;
+    -webkit-animation-timing-function: linear;
+    animation: driftBg 70s;
+    animation-timing-function: linear;
+    z-index: 0;
+}
+#cloud4 {
+    opacity: 0;
+    top:50px;
+    left: 20%;
+    -webkit-transform: scale(.40, .45);
+    -moz-transform: scale(.40, .45);
+    transform: scale(.40, .45);
+    -moz-animation: driftBg2 60s;
+    -moz-animation-timing-function: linear;
+    -webkit-animation: driftBg2 60s;
+    -webkit-animation-timing-function: linear;
+    animation: driftBg2 60s;
+    animation-timing-function: linear;
+    z-index: 0;
+}
+#cloud5 {
+    opacity: 0;
+    top:220px;
+    left: 90%;
+    -webkit-transform: scale(.40);
+    -moz-transform: scale(.40);
+    transform: scale(.40);
+    -moz-animation: driftBg3 90s;
+    -moz-animation-timing-function: linear;
+    -webkit-animation: driftBg3 90s;
+    -webkit-animation-timing-function: linear;
+    animation: driftBg3 90s;
+    animation-timing-function: linear;
+    z-index: 0;
+}
+#cloud6 {
+    opacity: .7;
+    top:60px;
+    left: 120%;
+    -webkit-transform: scale(.40);
+    -moz-transform: scale(.40);
+    transform: scale(.40);
+    -moz-animation: drift 110s;
+    -moz-animation-timing-function: linear;
+    -mox-animation-iteration-count: infinite;
+    -moz-animation-delay: 11s;
+    -webkit-animation: drift 110s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 11;
+    animation: drift 110s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 11;
+    z-index: 0;
+}
+#cloud7 {
+    opacity: .8;
+    top:95px;
+    left: 120%;
+    -webkit-transform: scale(.7);
+    -moz-transform: scale(.7);
+    transform: scale(.7);
+    -moz-animation: drift 45s;
+    -moz-animation-timing-function: linear;
+    -mox-animation-iteration-count: infinite;
+    -moz-animation-delay: 35s;
+    -webkit-animation: drift 45s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 35s;
+    animation: drift 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 35s;
+    z-index: 1;
+}
+/*individual circle position*/
+ #circ1 {
+    z-index: 1;
+}
+#circ2 {
+    top: 50px;
+    left: -40px;
+}
+#circ3 {
+    top: 50px;
+    left: -120px;
+}
+#circ4 {
+    top: 30px;
+    left: -60px;
+}
+#circ5 {
+    top: 100px;
+    left: -150px;
+}
+#circ6 {
+    top: 100px;
+    left: 130px;
+}
+
+/*style the clouds*/
+ .bigCloud {
+    box-shadow: 10px 10px 5px 20px black inset;
+    position: absolute;
+}
+/*style circles that make up clouds*/
+ .smallCircle {
+    height: 100px;
+    width: 100px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+}
+.middleCircle {
+    height: 150px;
+    width: 150px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+}
+.largeCircle {
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.calendar {
+  height:100px;
+}
+/*Circle shadows*/
+
+/*#circShadow1 {
+    background: grey;
+    border-radius: 30px 20px 500px 20px;
+    
+    -webkit-transform: rotate(45deg);
+    z-index:2;
+}*/
+@-webkit-keyframes drift {
+    from {
+        left: 120%;
+    }
+    to {
+        left: -25%;
+    }
+}
+@-moz-keyframes drift {
+    from {
+        left: 120%;
+    }
+    to {
+        left: -25%;
+    }
+}
+@keyframes drift {
+    from {
+        left: 120%;
+    }
+    to {
+        left: -25%;
+    }
+}
+@-webkit-keyframes driftBg {
+    0% {
+        left: 50%;
+        opacity: 0
+    }
+    3% {
+        left: 48%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@-moz-keyframes driftBg {
+    0% {
+        left: 50%;
+        opacity: 0
+    }
+    3% {
+        left: 48%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@keyframes driftBg {
+    0% {
+        left: 50%;
+        opacity: 0
+    }
+    3% {
+        left: 48%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@-webkit-keyframes driftBg2 {
+    0% {
+        left: 20%;
+        opacity: 0
+    }
+    3% {
+        left: 19%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@-moz-keyframes driftBg2 {
+    0% {
+        left: 20%;
+        opacity: 0
+    }
+    3% {
+        left: 19%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@keyframes driftBg2 {
+    0% {
+        left: 20%;
+        opacity: 0
+    }
+    3% {
+        left: 19%;
+        opacity: .7
+    }
+    100% {
+        left: -25%;
+        opacity: .7;
+    }
+}
+@-webkit-keyframes driftBg3 {
+    0% {
+        left: 90%;
+        opacity: 0
+    }
+    2% {
+        left: 88%;
+        opacity: .65
+    }
+    100% {
+        left: -25%;
+        opacity: .65;
+    }
+}
+@-moz-keyframes driftBg3 {
+    0% {
+        left: 90%;
+        opacity: 0
+    }
+    2% {
+        left: 88%;
+        opacity: .65
+    }
+    100% {
+        left: -25%;
+        opacity: .65;
+    }
+}
+@keyframes driftBg3 {
+    0% {
+        left: 90%;
+        opacity: 0
+    }
+    2% {
+        left: 88%;
+        opacity: .65
+    }
+    100% {
+        left: -25%;
+        opacity: .65;
+    }
+}
+.textBody {
+    height: 100%;
+    width: 1200px;
+    padding: 15px 15px 15px 15px;
+}
+.leftText {
+    width: 800px;
+    top: 600px;
+    position: absolute;
+    margin-left: 20px;
+
+    /*border-style: solid;
+    border-width: 2px;
+    border-color: black;*/
+}
+.leftText h2 {
+    font-family:"Century Gothic";
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+.leftText p {
+    font-family:"arial";
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    z-index: 5;
+}
+.rightText {
+    width: 300px;
+    height: auto;
+    position: relative;
+    left: 875px; top: 200px;
+    /*border-style: solid;
+    border-width: 2px;
+    border-color: black;*/
+}
+
+.rightText h4 {
+    font-family:"Century Gothic";
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 20px;
+}
+.rightText p {
+    font-family:"arial";
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+    margin: 30px;
+}
+/*put animated cloud shadows at the bottom of the page*/
