@@ -1,7 +1,7 @@
 import openai as openai
-
+openai.api_key = "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"
 response = openai.Image.create(
-  prompt="I had tea with my friends today. I was so happy.",
+  prompt="positive colors",
   n=1,
   size="1024x1024"
 )
