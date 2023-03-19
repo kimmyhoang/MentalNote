@@ -4,7 +4,7 @@ Mental Note is a sentiment journal that acts as a personal mood tracker. Users w
 
 Big thanks and credits to HackTheMist workshop leads for giving us the tools to create this project. 
 
-Neural style transfer workshop prepared by berke Altiparmak and Joshua Lunger.
+Neural style transfer workshop prepared by Berke Altiparmak and Joshua Lunger.
 
 HuggingFace & Flask workshop prepared by Arsh Kadakia. 
 
