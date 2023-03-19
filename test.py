@@ -1,5 +1,5 @@
 import openai as openai
-openai.api_key = ""
+openai.api_key = "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"
 response = openai.Image.create(
   prompt="positive colors",
   n=1,

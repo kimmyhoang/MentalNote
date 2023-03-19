@@ -6,7 +6,7 @@ def main():
     dates, data = generate_data()
     fig, ax = plt.subplots(figsize=(6, 10))
     calendar_heatmap(ax, dates, data)
-    plt.show()
+    plt.savefig('calendar.png')
 
 def generate_data():
     num = 100

@@ -1,4 +1,5 @@
 from __future__ import print_function
+from app import get_all_imgs
 
 import torch
 import torch.nn as nn
