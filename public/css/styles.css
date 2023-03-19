@@ -1,0 +1,21 @@
+:root {
+    /*this styling will be applied globally*/
+    --dark-purple: #B1B2FF;
+    --dark-blue: #AAC4FF;
+    --light-purple: #D2DAFF;
+    --light-blue: #EEF1FF;
+  }
+
+  body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue);
+  }
+
+  .title{
+    color: var(--dark-purple);
+    text-align: center;
+    padding: 10px;
+  }
+
