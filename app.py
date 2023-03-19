@@ -6,8 +6,37 @@ import openai as openai
 from chatbot import script
 
 #api key
-# openai.api_key = "" #add key
+openai.api_key = "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" #add key
 #pip install transformers[sentencepiece] <-- might have to install
+
+import requests
+
+# api_key = "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"
+
+# def interact(user_id, request):
+#     response = requests.post(
+#         f'https://general-runtime.voiceflow.com/state/user/{user_id}/interact',
+#         json={ 'request': request },
+#         headers={ 'Authorization': api_key },
+#     )
+
+#     for trace in response.json():
+#         if trace['type'] == 'speak' or trace['type'] == 'text':
+#             print(trace['payload']['message'])
+#         elif trace['type'] == 'end':
+#             # an end trace means the the voiceflow dialog has ended
+#             return False
+#     return True
+
+# name = input('> What is your name?\n')
+# isRunning = interact(name, { 'type': 'launch' })
+
+# while (isRunning):
+#     nextInput = input('> Say something\n')
+#     # send a simple text type request with the user input
+#     isRunning = interact(name, { 'type': 'text', 'payload': nextInput })
+
+# input('The end! Start me again with `python index.py` or `python3 index.py`')
 
 app = Flask('app_name')
 classifier = pipeline("sentiment-analysis")
@@ -46,10 +75,10 @@ def get_emotion_type(input):
 
 @app.route("/")
 def root():
-  return render_template("temp.html")
+  return render_template("/templates/index.html")
 
 #change tempInput 
-@app.route("/")
+# @app.route("/")
 def submit():
   tempInput = script
   isPositive = classifier(tempInput)
